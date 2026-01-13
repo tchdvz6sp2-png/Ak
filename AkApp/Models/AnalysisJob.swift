@@ -1,6 +1,6 @@
 import Foundation
 
-struct AnalysisJob: Identifiable, Hashable {
+struct AnalysisJob: Identifiable, Hashable, Codable {
     let id: UUID
     var recordingId: UUID
     var progress: Double
@@ -8,7 +8,7 @@ struct AnalysisJob: Identifiable, Hashable {
     var startedAt: Date
     var completedAt: Date?
 
-    enum Status: String {
+    enum Status: String, Codable {
         case queued
         case running
         case finished

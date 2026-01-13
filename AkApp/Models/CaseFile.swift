@@ -1,6 +1,6 @@
 import Foundation
 
-struct CaseFile: Identifiable, Hashable {
+struct CaseFile: Identifiable, Hashable, Codable {
     let id: UUID
     var title: String
     var summary: String

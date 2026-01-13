@@ -12,3 +12,12 @@ MVP návrh nativní iOS aplikace pro analýzu nahrávek a detekci nesrovnalostí
 1. Přidejte Xcode projekt a připojte složku `AkApp`.
 2. Nahraďte mock služby reálnými implementacemi (AVFoundation, Whisper/AssemblyAI, GPT-4o).
 3. Napojte trvalé ukládání dat (Core Data / SQLite).
+
+## Spuštění na iPhonu
+1. Otevřete Xcode (14+ doporučeno) a vytvořte nový projekt typu **App** se SwiftUI.
+2. Přetáhněte složku `AkApp` do projektu (zaškrtněte „Copy items if needed“).
+3. V **Signing & Capabilities** vyberte svůj Team a nastavte unikátní Bundle Identifier.
+4. Připojte iPhone přes USB nebo zapněte Wi‑Fi debugging, vyberte zařízení v horním panelu Xcode.
+5. Stiskněte **Run** (⌘R) – aplikace se nainstaluje a spustí na telefonu.
+
+Poznámka: Offline data jsou ukládána do lokálního JSON souboru v Documents adresáři (pro demo účely). Pro produkční nasazení použijte Core Data/SQLite.

@@ -38,7 +38,7 @@ struct DashboardView: View {
             }
             .navigationTitle("Dashboard")
             .navigationDestination(for: CaseFile.self) { caseFile in
-                CaseDetailView(caseFile: caseFile)
+                CaseDetailView(caseId: caseFile.id)
             }
             .task {
                 await viewModel.loadCases()

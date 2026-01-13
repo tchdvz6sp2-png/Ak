@@ -1,6 +1,6 @@
 import Foundation
 
-struct TranscriptSegment: Identifiable, Hashable {
+struct TranscriptSegment: Identifiable, Hashable, Codable {
     let id: UUID
     var speakerId: UUID
     var text: String

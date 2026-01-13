@@ -1,6 +1,6 @@
 import Foundation
 
-struct Speaker: Identifiable, Hashable {
+struct Speaker: Identifiable, Hashable, Codable {
     let id: UUID
     var name: String
     var voiceprintHash: String

@@ -7,7 +7,7 @@ final class DashboardViewModel: ObservableObject {
 
     private let store: RecordingStore
 
-    init(store: RecordingStore = InMemoryRecordingStore()) {
+    init(store: RecordingStore = LocalRecordingStore()) {
         self.store = store
     }
 

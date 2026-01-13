@@ -1,6 +1,6 @@
 import Foundation
 
-struct EmotionMetric: Hashable {
+struct EmotionMetric: Hashable, Codable {
     var neutrality: Double
     var anger: Double
     var fear: Double

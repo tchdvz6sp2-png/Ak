@@ -1,6 +1,6 @@
 import Foundation
 
-struct Inconsistency: Identifiable, Hashable {
+struct Inconsistency: Identifiable, Hashable, Codable {
     let id: UUID
     var title: String
     var severity: Severity
@@ -8,7 +8,7 @@ struct Inconsistency: Identifiable, Hashable {
     var relatedRecordingId: UUID
     var createdAt: Date
 
-    enum Severity: String, CaseIterable {
+    enum Severity: String, CaseIterable, Codable {
         case low = "Nízká"
         case medium = "Střední"
         case high = "Vysoká"

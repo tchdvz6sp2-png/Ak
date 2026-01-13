@@ -1,6 +1,6 @@
 import Foundation
 
-struct Recording: Identifiable, Hashable {
+struct Recording: Identifiable, Hashable, Codable {
     let id: UUID
     var title: String
     var fileURL: URL
